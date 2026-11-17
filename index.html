@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio Thomaz Laizo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+
+  <div class="layout">
+
+    <!-- ===== personalInformation ===== -->
+    <aside class="profile" aria-label="Perfil">
+      <!-- profilePhoto: troque o texto por <img src="..." alt="Foto de perfil"> -->
+      <div class="avatar" id="profilePhoto">NC</div>
+      <h1 id="fullName">Nome Completo</h1>
+      <p class="role" id="professionalTitle">Cargo ou especialidade</p>
+
+      <dl class="contact">
+        <dt>E-mail</dt>
+        <dd><a id="email" href="mailto:email@exemplo.com">email@exemplo.com</a></dd>
+
+        <dt>Telefone</dt>
+        <dd><a id="phone" href="tel:+5511900000000">+55 11 90000-0000</a></dd>
+
+        <dt>WhatsApp</dt>
+        <dd><a id="whatsapp" href="https://wa.me/5511900000000" target="_blank" rel="noopener noreferrer">+55 11 90000-0000</a></dd>
+
+        <dt>Localização</dt>
+        <dd id="location">Cidade - UF, País</dd>
+
+        <dt>LinkedIn</dt>
+        <dd><a id="linkedin" href="https://linkedin.com/in/usuario" target="_blank" rel="noopener noreferrer">linkedin.com/in/usuario</a></dd>
+
+        <dt>GitHub</dt>
+        <dd><a id="github" href="https://github.com/usuario" target="_blank" rel="noopener noreferrer">github.com/usuario</a></dd>
+
+        <dt>Portfólio</dt>
+        <dd><a id="portfolio" href="https://exemplo.com" target="_blank" rel="noopener noreferrer">exemplo.com</a></dd>
+
+        <dt>Site</dt>
+        <dd><a id="website" href="https://exemplo.com" target="_blank" rel="noopener noreferrer">exemplo.com</a></dd>
+      </dl>
+    </aside>
+
+    <div class="content">
+
+      <nav class="nav" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacao">Formação</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#competencias">Competências</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#disponibilidade">Disponibilidade</a>
+      </nav>
+
+      <main id="main">
+
+        <!-- ===== professionalSummary ===== -->
+        <section id="sobre">
+          <h2>Sobre</h2>
+          <p class="lead" id="description">Resumo profissional em duas ou três frases.</p>
+          <dl class="facts">
+            <div>
+              <dt>Experiência</dt>
+              <dd id="yearsOfExperience">0 anos</dd>
+            </div>
+            <div>
+              <dt>Especialização</dt>
+              <dd id="mainSpecialization">Área principal de atuação</dd>
+            </div>
+            <div>
+              <dt>Objetivo</dt>
+              <dd id="careerObjective">Objetivo de carreira</dd>
+            </div>
+          </dl>
+        </section>
+
+        <!-- ===== professionalExperience ===== -->
+        <!-- Copie o <li> para cada emprego. Use class="current" no emprego atual. -->
+        <section id="experiencia">
+          <h2>Experiência</h2>
+          <ol class="timeline" id="professionalExperience">
+            <li class="current">
+              <div class="head">
+                <h3 data-field="position">Cargo</h3>
+                <time data-field="period">mar 2023 – Atual</time>
+              </div>
+              <p class="meta"><strong data-field="company">Empresa</strong>, <span data-field="employmentType">Tipo de contrato</span>, <span data-field="location">Local</span></p>
+              <p data-field="description">Descrição da posição.</p>
+
+              <h4>Responsabilidades</h4>
+              <ul class="bullets" data-field="responsibilities">
+                <li>Responsabilidade 1</li>
+                <li>Responsabilidade 2</li>
+              </ul>
+
+              <h4>Resultados</h4>
+              <ul class="bullets" data-field="achievements">
+                <li>Resultado 1</li>
+              </ul>
+
+              <ul class="chips" data-field="technologies" aria-label="Tecnologias">
+                <li>Tecnologia 1</li>
+                <li>Tecnologia 2</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- ===== projects ===== -->
+        <!-- Copie o <article> para cada projeto. -->
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <div class="grid" id="projects">
+            <article class="card">
+              <h3 data-field="name">Nome do projeto</h3>
+              <p class="meta"><span data-field="role">Seu papel</span>, <span data-field="period">mar 2024 – ago 2024</span></p>
+              <p data-field="description">Descrição curta do projeto.</p>
+              <a data-field="url" href="https://exemplo.com" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+              <ul class="chips" data-field="technologies" aria-label="Tecnologias">
+                <li>Tecnologia 1</li>
+                <li>Tecnologia 2</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===== skills ===== -->
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+
+          <div class="group">
+            <h3>Técnicas</h3>
+            <!-- Nível: 4 bolinhas; adicione class="on" nas que estiverem preenchidas -->
+            <ul class="skills" id="technical">
+              <li>
+                <span data-field="name">Habilidade</span>
+                <span class="dots" role="img" aria-label="Nível: Avançado"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="group">
+            <h3>Ferramentas</h3>
+            <ul class="chips" id="tools"><li>Ferramenta 1</li><li>Ferramenta 2</li></ul>
+          </div>
+
+          <div class="group">
+            <h3>Metodologias</h3>
+            <ul class="chips" id="methodologies"><li>Metodologia 1</li><li>Metodologia 2</li></ul>
+          </div>
+
+          <div class="group">
+            <h3>Comportamentais</h3>
+            <ul class="chips" id="behavioral"><li>Habilidade 1</li><li>Habilidade 2</li></ul>
+          </div>
+        </section>
+
+        <!-- ===== education ===== -->
+        <!-- Copie o <li> para cada formação. -->
+        <section id="formacao">
+          <h2>Formação</h2>
+          <ul class="rows" id="education">
+            <li>
+              <div class="head">
+                <h3><span data-field="degree">Grau</span> em <span data-field="fieldOfStudy">Curso</span></h3>
+                <span class="side" data-field="period">fev 2017 – dez 2020</span>
+              </div>
+              <p class="meta"><span data-field="institution">Instituição</span>, <span data-field="level">Nível</span></p>
+              <p data-field="description">Descrição opcional.</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== certifications ===== -->
+        <section id="certificacoes">
+          <h2>Certificações</h2>
+          <ul class="rows" id="certifications">
+            <li>
+              <div class="head">
+                <h3 data-field="name">Nome da certificação</h3>
+                <span class="side"><span data-field="issueDate">mai 2024</span>, válida até <span data-field="expirationDate">mai 2027</span></span>
+              </div>
+              <p class="meta" data-field="issuer">Emissor</p>
+              <a data-field="credentialUrl" href="https://exemplo.com" target="_blank" rel="noopener noreferrer">Ver credencial</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== competencies ===== -->
+        <!-- Copie o <li> para cada competência. -->
+        <section id="competencias">
+          <h2>Competências</h2>
+          <ul class="skills" id="competencies">
+            <li>
+              <span data-field="name">Competência</span>
+              <span class="lvl" data-field="institution">Instituição</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== languages ===== -->
+        <section id="idiomas">
+          <h2>Idiomas</h2>
+          <ul class="rows" id="languages">
+            <li>
+              <div class="head">
+                <h3 data-field="name">Idioma</h3>
+                <span class="side" data-field="proficiency">Nível</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ===== additionalInformation + preferences ===== -->
+        <section id="disponibilidade">
+          <h2>Disponibilidade</h2>
+          <dl class="facts">
+            <div>
+              <dt>Disponibilidade</dt>
+              <dd id="availability">Imediata</dd>
+            </div>
+            <div>
+              <dt>Modelo de trabalho</dt>
+              <dd id="workModel">Híbrido ou remoto</dd>
+            </div>
+            <div>
+              <dt>Viagens</dt>
+              <dd id="travelAvailability">Disponível para viagens</dd>
+            </div>
+            <div>
+              <dt>Observações</dt>
+              <dd id="additionalNotes">Observações adicionais</dd>
+            </div>
+          </dl>
+
+          <div class="group">
+            <h3>Cargos de interesse</h3>
+            <ul class="chips" id="targetPositions"><li>Cargo 1</li><li>Cargo 2</li></ul>
+          </div>
+          <div class="group">
+            <h3>Setores de interesse</h3>
+            <ul class="chips" id="targetIndustries"><li>Setor 1</li><li>Setor 2</li></ul>
+          </div>
+          <div class="group">
+            <h3>Localidades preferidas</h3>
+            <ul class="chips" id="preferredLocations"><li>Local 1</li><li>Local 2</li></ul>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer">Atualizado em <time id="lastUpdated">05/11/2026</time></footer>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
