@@ -8,7 +8,7 @@ const dados = {
         "personalInformation": {
             "fullName": "Thomaz Silva Laizo",
             "professionalTitle": "",
-            "profilePhoto": "C:/Users/Alunos/Desktop/projetos/CVPessoal-Piaget/212450417.jpeg",
+            "profilePhoto": "212450417.jpeg",
             "email": "thomazlaizo@gmail.com",
             "phone": "+55 11 95134-9043",
             "whatsapp": "+55 11 95134-9043",
